@@ -1,0 +1,98 @@
+/**
+ * Drupal Composer theme for reveal-js.
+ */
+
+
+// Default mixins and settings -----------------
+@import "../../bower_components/reveal.js/css/theme/template/mixins";
+@import "../../bower_components/reveal.js/css/theme/template/settings";
+// ---------------------------------------------
+
+// Drupal Composer variables
+$dc-dark: #2f3238;
+$dc-gray: #74777b;
+$dc-blue: #3498db;
+$dc-blue-hover: #528cb3;
+$dc-font-family: 'Raleway', Arial, sans-serif;
+
+
+// Override theme settings (see ../template/settings.scss)
+$backgroundColor: #fff;
+
+$mainColor: $dc-gray;
+$headingColor: $dc-dark;
+
+$mainFontSize: 32px;
+$mainFont: $dc-font-family;
+$headingFont: $dc-font-family;
+$headingTextShadow: none;
+$headingLetterSpacing: normal;
+$headingTextTransform: uppercase;
+$headingFontWeight: 700;
+$linkColor: $dc-blue;
+$linkColorHover: $dc-blue-hover;
+$selectionBackgroundColor: lighten( $linkColor, 25% );
+
+$heading1Size: 2.2em;
+$heading2Size: 1.6em;
+$heading3Size: 1.3em;
+$heading4Size: 1.0em;
+
+section.has-dark-background {
+  &, h1, h2, h3, h4, h5, h6 {
+    color: #fff;
+  }
+}
+
+// Header
+header .session--info {
+  display: inline-block;
+  float: right;
+  font-size: 0.33em;
+  position: absolute;
+  top: 0em;
+  right: 1em;
+}
+header .session--info > * {
+  display: inline-block;
+}
+
+
+
+// Theme template ------------------------------
+@import "../../bower_components/reveal.js/css/theme/template/theme";
+// ---------------------------------------------
+
+/**
+ * Overrides
+ */
+
+// Images
+.reveal section img {
+  //margin: 15px 0px;
+  //background: rgba(255, 255, 255, 0.12);
+  border: none;
+  box-shadow: none;
+}
+
+.reveal code {
+  border: 1px solid $dc-gray;
+  padding: 0 0.3em;
+  white-space: pre;
+}
+
+.reveal blockquote {
+  display: block;
+  position: relative;
+  width: 70%;
+  margin: 20px auto;
+  padding: 5px;
+  font-style: italic;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid $dc-blue;
+  box-shadow: none;
+}
+
+.reveal ul li {
+  margin-bottom: 0.5em;
+}
