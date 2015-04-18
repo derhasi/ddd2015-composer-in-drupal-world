@@ -1,17 +1,17 @@
 {
-  "name": "ddd2015-composer-in-drupal-world",
+  "name": "undpaul-slides",
   "version": "1.0.0",
   "authors": [
     "Johannes Haseitl <johannes@undpaul.de>"
   ],
-  "description": "Drupal Dev Days 2015 Montpellier: Session about Composer in Drupal World",
+  "description": "undpaul slides from different conferences",
   "main": "index.html",
   "keywords": [
     "revealjs",
     "drupal"
   ],
   "license": "MIT",
-  "homepage": "http://montpellier2015.drupaldays.org/sessions/composer-drupal-world",
+  "homepage": "http://undpaul.github.io/slides",
   "private": true,
   "ignore": [
     "**/.*",
