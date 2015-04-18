@@ -18,14 +18,12 @@ section.ddd-intro {
 
   h1 {
     color: #fff;
-    position: absolute;
-    top: -200px;
     font-size: 1.5em;
+    margin-top: -15%
   }
 
   h2 {
     color: #fff;
-    position: absolute;
     top: 60px;
     font-size: 0.8em;
     text-transform: none;
@@ -34,12 +32,21 @@ section.ddd-intro {
 
 
     &:before {
+      display: block;
       content: "";
       width: 65px;
       height: 8px;
       background: #C21426;
-      position: absolute;
       top: -50px;
+      margin: 2em 0;
+    }
+  }
+}
+
+.print-pdf {
+  .ddd-intro {
+    h1, h2 {
+      margin-left: 25%;
     }
   }
 }
