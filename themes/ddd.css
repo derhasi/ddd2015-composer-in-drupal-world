@@ -2,25 +2,20 @@
  * LINKS
  *********************************************/
 .reveal .ddd a {
-  color: #d74343;
-}
+  color: #d74343; }
 
 .reveal .ddd a:hover {
-  color: #d74343;
-}
+  color: #d74343; }
 
-.reveal .slides > section.ddd-intro  {
+.reveal .slides > section.ddd-intro {
   padding-left: 4em;
-  text-align: left;
-}
+  text-align: left; }
 
 section.ddd-intro h1 {
   color: #fff;
   position: absolute;
   top: -200px;
-  font-size: 1.5em;
-}
-
+  font-size: 1.5em; }
 section.ddd-intro h2 {
   color: #fff;
   position: absolute;
@@ -28,16 +23,14 @@ section.ddd-intro h2 {
   font-size: 0.8em;
   text-transform: none;
   font-style: italic;
-  font-weight: normal;
-}
-section.ddd-intro h2:before {
-  content: "";
-  width: 65px;
-  height: 8px;
-  background: #C21426;
-  position: absolute;
-  top: -50px;
-}
+  font-weight: normal; }
+  section.ddd-intro h2:before {
+    content: "";
+    width: 65px;
+    height: 8px;
+    background: #C21426;
+    position: absolute;
+    top: -50px; }
 
 footer.ddd .branding--logo {
   display: inline-block;
@@ -45,25 +38,18 @@ footer.ddd .branding--logo {
   margin-left: 1em;
   font-size: 0.5em;
   position: absolute;
-  bottom: 0em;
-}
+  bottom: 0em; }
 footer.ddd .logo__image {
   display: inline-block;
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 footer.ddd .logo__site-name {
-  display: inline-block;
-}
-
+  display: inline-block; }
 footer.ddd .session--info {
   display: inline-block;
   float: right;
   font-size: 0.5em;
   position: absolute;
   bottom: 0em;
-  right: 5em;
-}
-footer.ddd .session__title, footer .session__presenter {
-  display: inline-block; 
-}
-
+  right: 5em; }
+footer.ddd .session__title, footer.ddd .session__presenter {
+  display: inline-block; }

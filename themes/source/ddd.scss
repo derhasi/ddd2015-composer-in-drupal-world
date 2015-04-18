@@ -1,0 +1,80 @@
+/*********************************************
+ * LINKS
+ *********************************************/
+.reveal .ddd a {
+  color: #d74343;
+}
+
+.reveal .ddd a:hover {
+  color: #d74343;
+}
+
+.reveal .slides > section.ddd-intro  {
+  padding-left: 4em;
+  text-align: left;
+}
+
+section.ddd-intro {
+
+  h1 {
+    color: #fff;
+    position: absolute;
+    top: -200px;
+    font-size: 1.5em;
+  }
+
+  h2 {
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    font-size: 0.8em;
+    text-transform: none;
+    font-style: italic;
+    font-weight: normal;
+
+
+    &:before {
+      content: "";
+      width: 65px;
+      height: 8px;
+      background: #C21426;
+      position: absolute;
+      top: -50px;
+    }
+  }
+}
+
+
+footer.ddd {
+
+  .branding--logo {
+    display: inline-block;
+    float: left;
+    margin-left: 1em;
+    font-size: 0.5em;
+    position: absolute;
+    bottom: 0em;
+  }
+
+  .logo__image {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .logo__site-name {
+    display: inline-block;
+  }
+
+  .session--info {
+    display: inline-block;
+    float: right;
+    font-size: 0.5em;
+    position: absolute;
+    bottom: 0em;
+    right: 5em;
+  }
+
+  .session__title, .session__presenter {
+    display: inline-block;
+  }
+}
