@@ -1,10 +1,8 @@
 # undpaul Slides
 
-## Slides
+This repo holds slides by undpaul.
 
-## DDD 2015 - Composer in Drupal World
-
-[Session at Drupal Dev Days 2015 Montpellier](http://montpellier2015.drupaldays.org/sessions/composer-drupal-world) by derhasi.
+* [Overview](http://undpaul.github.io/slides/)
 
 ## Dev-instructions
 
