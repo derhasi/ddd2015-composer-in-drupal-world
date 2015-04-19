@@ -1,0 +1,56 @@
+
+.reveal h3 {
+  margin-top: 1em;
+}
+
+.reveal blockquote {
+  width: 60%;
+  position: relative;
+}
+
+blockquote img.author {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  right: 100%;
+  top: 0;
+  max-heigth: 100%;
+}
+
+blockquote img.author.right {
+  right: auto;
+  left: 100%;
+}
+
+.reveal div.annotation {
+  font-style: italic;
+  font-size: 75%;
+  line-height: 1.1em;
+  margin-top: 1em;
+}
+
+.reveal table tr th {
+  text-transform: uppercase;
+  border-bottom: 2px solid grey;
+}
+
+.reveal table tr td {
+  border-bottom: 1px solid grey;
+}
+
+.reveal div.licence {
+  font-size: 33%;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  opacity: 0.5;
+}
+.reveal div.licence a,
+.reveal div.licence span {
+  vertical-align: baseline;
+  color: white;
+}
+
+.reveal div.licence ol li {
+  line-height: 1em;
+}

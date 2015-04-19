@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+
+    <title>Master for Drupal</title>
+    <meta name="description" content="Presentation on the drupal module Master for controlling modules.">
+    <meta name="author" content="Johannes Haseitl">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="../bower_components/reveal.js/css/reveal.css">
+    <link rel="stylesheet" href="../bower_components/reveal.js/css/theme/league.css" id="theme">
+    <link rel="stylesheet" href="style.css" id="theme-addition">
+
+    <!-- Code syntax highlighting -->
+    <link rel="stylesheet" href="../bower_components/reveal.js/lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? '../bower_components/reveal.js/css/print/pdf.css' : '../bower_components/reveal.js/css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="../bower_components/reveal.js/lib/js/html5shiv.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+  <div class="reveal">
+
+    <!-- Any section element inside of this container is displayed as a slide -->
+    <div class="slides">
+
+      <section>
+        <h1>Master</h1>
+        <div>
+          <img src="https://drupal.org/files/images/master_joda.png" style="width: 366.2037111694399px; height: 367.63622999191284px; max-height: none; max-width: none;">
+          <br>
+        </div>
+        <div>
+          <i>"May your modules be with you!"</i>
+        </div>
+      </section>
+      <section>
+        <section data-background-color="rgba( 200, 50, 30, 0.6 )">
+          <h2>Yoda,<br>what is your<br>Problem?</h2>
+        </section>
+        <section data-background-color="rgba( 255, 122, 0, 0.6 )">
+          <h3>Luke</h3>
+          <blockquote class="fragment" data-fragment-index="0">
+            <img src="http://upload.wikimedia.org/wikipedia/commons/9/9b/Mark_Hamill_%281978%29.jpg" class="author"/>
+            Leia,<br/>
+            I can't upload an image on that site.<br/>
+            I do see nothing for that!
+          </blockquote>
+          <h3 class="fragment" data-fragment-index="1">Leia</h3>
+          <blockquote class="fragment" data-fragment-index="2">
+            <img src="http://upload.wikimedia.org/wikipedia/commons/a/a9/Carrie_Fisher.jpg" class="author right"/>
+            Hey Luke,<br/>
+            you have to enable<br/>
+            the <code>tatooine_media</code> feature!
+          </blockquote>
+          <div class="licence">
+            <ol>
+              <li class="fragment" data-fragment-index="0">
+                <a href="http://creativecommons.org/licenses/by/2.0/deed.en" title=" Creative Commons Attribution 2.0 Generic">CC BY 2.0</a>:
+                <a href="http://commons.wikimedia.org/wiki/File:Mark_Hamill_(1978).jpg">photo</a>
+                by <a href="http://www.flickr.com/people/42274165@N00">Alan Light</a>
+              </li>
+              <li class="fragment" data-fragment-index="2">
+                <a href="http://creativecommons.org/licenses/by/2.0/deed.en" title=" Creative Commons Attribution 2.0 Generic licence">CC BY 2.0</a>:
+                <a href="http://commons.wikimedia.org/wiki/File:Carrie_Fisher.jpg">photo</a>
+                by <a href="http://flickr.com/photos/alan-light/">Alan Light</a>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section data-background-color="rgba( 180, 50, 140, 0.6 )">
+          <h3>Chewbacca</h3>
+          <blockquote class="fragment" data-fragment-index="0">
+            <img src="http://farm4.staticflickr.com/3539/3370496886_14407dc00f_q.jpg" class="author"/>
+            Awww,<br/>
+            rooarrr,<br/>
+            awwww!
+          </blockquote>
+          <h3 class="fragment" data-fragment-index="1">Han Solo</h3>
+          <blockquote class="fragment" data-fragment-index="2">
+            <img src="http://farm4.staticflickr.com/3814/8833161866_e0889740e7_m.jpg" class="author right">
+            Yeah, Chewy!!<br/>
+            That happened to me, too.<br/>
+            You forgot to uninstall <code>jquery_update</code>.</blockquote>
+          </blockquote>
+          <div class="licence">
+            <ol>
+              <li class="fragment" data-fragment-index="0">
+                <a href="http://creativecommons.org/licenses/by-sa/2.0/" title="Attribution-ShareAlike License">CC BY-SA 2.0</a>:
+                <a href="http://www.flickr.com/photos/darthkao/3370496886">photo</a>
+                by <a href="http://www.flickr.com/photos/darthkao/">AlexSlocker</a>
+              </li>
+              <li class="fragment" data-fragment-index="2">
+                <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/" title="Attribution-NonCommercial-ShareAlike License">CC BY-NC-SA 2.0</a>:
+                <a href="http://www.flickr.com/photos/darthkao/3370496886">photo</a>
+                by <a href="http://www.flickr.com/photos/ajalfaro/">ajalfaro</a>
+              </li>
+            </ol>
+          </div>
+        </section>
+
+      </section>
+      <section>
+        <section data-background-color="rgba( 50, 200, 90, 0.4 )">
+          <h2>Young padawan,</h2>
+          <h2>a solution, we have!</h2>
+        </section>
+        <section>
+          <h2>Main aspects</h2>
+          <ul>
+            <li class="fragment" data-fragment-index="0">
+              Know <strong>what modules have to be enabled</strong> to provide the full functionality in your project.
+            </li>
+            <li class="fragment" data-fragment-index="1">
+              <b>Uninstall modules</b> you do not need. They could be reasons for unforeseen side-effects.</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Module whitelist</h2>
+          Define the modules you need.
+          <h3 class="fragment" data-fragment-index="0">Example:</h3>
+          <ul class="fragment" data-fragment-index="0">
+            <li>tatooine_base</li>
+            <li>tatooine_news</li>
+            <li>tatooine_media</li>
+          </ul>
+          <div class="fragment annotation" data-fragment-index="1">
+            Notice:<br/>
+            all dependencies are automatically part of that whitelist.
+          </div>
+        </section>
+        <section>
+          <h2>Actual vs. target</h2>
+          Compare actual module list with intended one.
+          <h3 class="fragment" data-fragment-index="0">Example:</h3>
+          <table class="fragment" data-fragment-index="0">
+            <tr><th>actual</th><th>target</th></tr>
+            <tr>
+              <td>tatooine_base (user, node)</td>
+              <td>tatooine_base (user, node)</td>
+            </tr>
+            <tr>
+              <td>tatooine_news (field, text)</td>
+              <td>tatooine_news (field, text)</td>
+            </tr>
+            <tr><td>comment</td><td></td></tr>
+            <tr>
+              <td>field</td>
+              <td>tatooine_media (field, image)</td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <h2>Ensure target status</h2>
+          Modules have to be enabled, disabled or uninstalled to fit the
+          intended state.
+          <h3 class="fragment" data-fragment-index="0">Example:</h3>
+          <table class="fragment" data-fragment-index="0">
+            <tr><th>current</th><th>action</th></tr>
+            <tr>
+              <td>tatooine_base (user, node)</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <td>tatooine_news (field, text)</td>
+              <td>-</td>
+            </tr>
+            <tr><td>comment</td><td>disable and uninstall comment</td></tr>
+            <tr>
+              <td>field</td>
+              <td>enable image and tatooine_media</td>
+            </tr>
+          </table>
+        </section>
+        <section>
+          <h2>Master commands</h2>
+          And those are the commands (for drush).
+          <h3 class="fragment" data-fragment-index="0">drush master-status</h3>
+          <p class="fragment" data-fragment-index="0">Shows the current state and modules that shall be enabled or disabled.</p>
+          <h3 class="fragment" data-fragment-index="1">drush master-ensure-modules</h3>
+          <p class="fragment" data-fragment-index="1">Enables, disables and uninstalls modules.</p>
+        </section>
+        <section data-background-color="rgba( 255, 122, 0, 0.6 )">
+          <h2>Demo</h2>
+        </section>
+      </section>
+      <section>
+        <section data-background-color="rgba( 200, 50, 30, 0.6 )">
+          <h2>Multiple environments,<br/> we have!</h2>
+        </section>
+        <section data-background-color="rgba( 255, 122, 0, 0.6 )">
+          <h3>Padme</h3>
+          <blockquote class="fragment" data-fragment-index="0">
+            <img src="http://farm3.staticflickr.com/2870/9403526760_9a54292854_m.jpg"
+                 class="author right"
+                 title="CC BY-NC-SA 2.0 from http://www.flickr.com/photos/tdouglaspainting/9403526760"/>
+            Anakin,<br/>
+            you only should have enabled that tatooine_dev feature on your local machine!
+          </blockquote>
+          <div class="licence">
+            <ol>
+              <li class="fragment" data-fragment-index="0">
+                <a href="http://creativecommons.org/licenses/by-nc-sa/2.0/" title="Attribution-NonCommercial-ShareAlike License">CC BY-NC-SA 2.0</a>:
+                <a href="http://www.flickr.com/photos/tdouglaspainting/9403526760">photo</a>
+                by <a href="http://www.flickr.com/photos/tdouglaspainting/photos/tdouglaspainting/">SALTY_DOGG</a>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section data-background-color="rgba( 255, 122, 0, 0.6 )">
+          <h3>Obi-Wan</h3>
+          <blockquote class="fragment" data-fragment-index="0">
+            <img src="http://farm8.staticflickr.com/7261/7578792822_6295e9cfe9_q.jpg"
+                 class="author"/>
+            C3PO,
+            you have to enable stage_file_proxy on your stage.
+            This way you get the files from live.
+          </blockquote>
+          <div class="licence">
+            <ol><li class="fragment" data-fragment-index="0">
+              <a href="http://creativecommons.org/licenses/by/2.0/" title="Attribution License">CC BY 2.0</a>:
+              <a href="http://www.flickr.com/photos/29892617@N06/7578792822">photo</a>
+              by <a href="http://www.flickr.com/photos/29892617@N06/">Jim &amp; Rachel McArthur</a>
+            </li></ol>
+          </div>
+        </section>
+        <section data-background-color="rgba( 255, 122, 0, 0.6 )">
+          <h3>Configuration per Scope</h3>
+        <pre><code>
+// Master module settings.
+$conf['master_modules'] = array(
+  'tatooine_base',
+  'tatooine_news',
+  // [...]
+  'tatooine_analytics',
+  'tatooine_i18n',
+);
+$conf['master_modules:local'] = array(
+  'stage_file_proxy', 'maillog', 'devel', 'views_ui', 'module_filter',
+);
+$conf['master_modules:stage'] = array(
+  'stage_file_proxy', 'maillog',
+);
+$conf['master_modules:live'] = array();
+        </code></pre>
+        </section>
+        <section data-background-color="rgba( 255, 122, 0, 0.6 )">
+          <h3>Using scopes</h3>
+        <pre><code>
+          drush master-status --scope=local
+          drush master-ensure-modules --scope=local
+        </code></pre>
+        </section>
+        <section data-background-color="rgba( 255, 122, 0, 0.6 )">
+          <h2>Demo</h2>
+        </section>
+      </section>
+
+    </div>
+
+  </div>
+
+    <script src="../bower_components/reveal.js/lib/js/head.min.js"></script>
+    <script src="../bower_components/reveal.js/js/reveal.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/webfont/1.5.10/webfont.js"></script>
+    <script>
+      WebFont.load({
+        google: {
+          families: ['Raleway']
+        }
+      });
+    </script>
+
+    <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+
+        transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../bower_components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../bower_components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../bower_components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+          { src: '../bower_components/reveal.js/plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+          { src: '../bower_components/reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '../bower_components/reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+
+    </script>
+
+  </body>
+</html>
